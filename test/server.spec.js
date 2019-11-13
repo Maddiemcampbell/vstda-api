@@ -8,7 +8,7 @@ const app = require('../server/app');
 var mock = [];
 
 describe("server module", function() {
-  this.timeout(6500);
+  this.timeout(8000);
   beforeEach(() => {
     mock = [
       {
