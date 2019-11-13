@@ -63,9 +63,10 @@ app.delete('/api/TodoItems/:id', function (req, res) {
       res.status(200).send(newTasks[i]);
     }
   }
-})
+});
 
-
-
+app.get('*', function(req, res){
+    res.status(404).send('Page Not Found');
+});
 
 module.exports = app;
